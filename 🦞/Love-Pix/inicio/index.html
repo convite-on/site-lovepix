@@ -170,10 +170,13 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 typebotInitScript.type = "module";
 typebotInitScript.innerHTML = `import Typebot from 'https://cdn.jsdelivr.net/npm/@typebot.io/js@0.3.4/dist/web.js'
   
-Typebot.initStandard({
-  typebot: "lovepixs-on",
-  apiHost: "https://viwer.suportevirtual.store",
-});
+<script type="module">
+  import Typebot from "https://cdn.jsdelivr.net/npm/@typebot.io/js@0.3/dist/web.js"
+
+  Typebot.initStandard({
+    typebot: "lovepixs-on"
+  });
+</script>
 `;
 document.body.append(typebotInitScript);
 			</script>
